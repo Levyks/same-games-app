@@ -70,6 +70,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@popperjs/core@^2.11.5":
+  version "2.11.5"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
+  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
+
 "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
@@ -954,6 +959,11 @@ prettier-plugin-svelte@^2.7.0:
   resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-2.7.0.tgz#ecfa4fe824238a4466a3497df1a96d15cf43cabb"
   integrity sha512-fQhhZICprZot2IqEyoiUYLTRdumULGRvw0o4dzl5jt0jfzVWdGqeYW27QTWAeXhoupEZJULmNoH3ueJwUWFLIA==
 
+prettier@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
+  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
+
 punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
@@ -964,10 +974,10 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-rawg-api-sdk@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/rawg-api-sdk/-/rawg-api-sdk-0.0.2.tgz#9df4f97e1ef3cca9c1305e11553c4270f19c1c23"
-  integrity sha512-ZjHLj8pBDXeUXi8wSrqR2uNns4HiW/PygeUAM5O1Ez6j6ocgP96fz29NB2WZ8ekogQVBT+4ctcPgGhNOffplFA==
+rawg-api-sdk@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/rawg-api-sdk/-/rawg-api-sdk-0.0.3.tgz#48f066428b16dec896e8bec5fad64f37bf8f1510"
+  integrity sha512-wVkJAj0ltnAfxdScPoSnupWp7NCqkeL89hKhRncAsazhkJyGDbHaNBhDyL7gje4Zl94LmKTX769uUMWeX6SBqw==
   dependencies:
     axios "^0.27.2"
 

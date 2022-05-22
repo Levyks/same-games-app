@@ -23,7 +23,7 @@
       {game.genres.map((genre) => genre.name).join('/')}
     </h6>
     <p class="card-text text-muted text-end">
-      From {game.released.getFullYear()}
+      From {game.released?.getFullYear()}
     </p>
     <button
       class="btn btn-primary"
