@@ -23,7 +23,7 @@
     </p>
     <button
       class="btn btn-primary"
-      disabled={$favorites.some((g) => g.id === game.id)}
+      disabled={favorites.hasGame(game)}
       on:click={() => favorites.add(game)}>Add to favorites</button
     >
   </div>
