@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { favorites } from '@/stores';
+  import favorites from '@/stores/favorites';
   import FavoriteItem from './FavoriteItem.svelte';
 </script>
 

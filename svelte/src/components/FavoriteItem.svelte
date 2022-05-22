@@ -1,18 +1,14 @@
 <script lang="ts">
-  import { favorites } from '@/stores';
+  import favorites from '@/stores/favorites';
   import type { ListGame } from 'rawg-api-sdk';
 
   export let game: ListGame;
-
-  function removeFromFavorites() {
-    favorites.update((favorites) => favorites.filter((g) => g.id !== game.id));
-  }
 </script>
 
 <li class="list-group-item d-flex align-items-center">
   <img src={game.background_image} alt="Cover of {game.name}" />
   <span class="ms-2 flex-grow-1">{game.name}</span>
-  <button class="btn btn-close" on:click={removeFromFavorites} />
+  <button class="btn btn-close" on:click={() => favorites.remove(game)} />
 </li>
 
 <style lang="scss">

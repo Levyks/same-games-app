@@ -1,12 +1,8 @@
 <script lang="ts">
-  import { favorites } from '@/stores';
+  import favorites from '@/stores/favorites';
   import type { ListGame } from 'rawg-api-sdk';
 
   export let game: ListGame;
-
-  function addToFavorites() {
-    favorites.update((favorites) => [...favorites, game]);
-  }
 </script>
 
 <div class="card">
@@ -28,7 +24,7 @@
     <button
       class="btn btn-primary"
       disabled={$favorites.some((g) => g.id === game.id)}
-      on:click={addToFavorites}>Add to favorites</button
+      on:click={() => favorites.add(game)}>Add to favorites</button
     >
   </div>
 </div>
