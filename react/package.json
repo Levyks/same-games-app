@@ -1,0 +1,38 @@
+{
+  "name": "same-games-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "rawg-api-sdk": "^0.0.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
+    "use-debounce": "^8.0.1"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.5",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "bootstrap": "^5.1.3",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.1",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}
