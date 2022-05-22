@@ -1,12 +1,9 @@
-import { ListGame } from 'rawg-api-sdk';
-import { useSelector } from 'react-redux';
-import { RootState } from '../stores';
+import { useRecoilState } from 'recoil';
+import { favoritesState } from '../stores/favorites';
 import FavoritesItem from './FavoritesItem';
 
 function Favorites() {
-  const favorites = useSelector<RootState, ListGame[]>(
-    (state) => state.favorites.favorites
-  );
+  const [favorites] = useRecoilState(favoritesState);
 
   return (
     <>

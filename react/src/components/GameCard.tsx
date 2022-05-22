@@ -1,18 +1,17 @@
 import { ListGame } from 'rawg-api-sdk';
-import { useDispatch, useSelector } from 'react-redux';
-import { add as addToFavorites } from '../stores/favorites';
-import { AppDispatch, RootState } from '../stores';
+import { favoritesState } from '../stores/favorites';
 import styles from './GameCard.module.scss';
+import { useRecoilState } from 'recoil';
 
 type GameCardProps = {
   game: ListGame;
 };
 
 function GameCard({ game }: GameCardProps) {
-  const favorites = useSelector<RootState, ListGame[]>(
-    (state) => state.favorites.favorites
-  );
-  const dispatch = useDispatch<AppDispatch>();
+  const [favorites, setFavorites] = useRecoilState(favoritesState);
+
+  const addToFavorites = () => setFavorites(favorites.concat(game));
+  const disabled = favorites.some((fav) => fav.id === game.id);
 
   return (
     <div className="card">
@@ -33,8 +32,8 @@ function GameCard({ game }: GameCardProps) {
         </p>
         <button
           className="btn btn-primary"
-          disabled={favorites.some((fav) => fav.id === game.id)}
-          onClick={() => dispatch(addToFavorites(game))}
+          disabled={disabled}
+          onClick={addToFavorites}
         >
           Add to favorites
         </button>
